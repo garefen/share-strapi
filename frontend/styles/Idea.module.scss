@@ -8,21 +8,21 @@ $background-green: #0c6140;
 $gray: #b3b3b1;
 
 .idea {
-	max-width: 1100px;
 	margin: 0 auto;
-	
+	max-width: 1100px;
+
 	&__user {
 		align-items: center;
+		color: $black;
 		display: flex;
 		margin: 70px 0 50px;
-		color: $black;
 		text-decoration: none;
 
 		&_image {
 			img {
 				border-radius: 50%;
-				width: 50px;
 				height: 50px;
+				width: 50px;
 			}
 		}
 
@@ -36,30 +36,30 @@ $gray: #b3b3b1;
 	}
 
 	&__date {
-		font-size: 14px;
 		color: #858585;
+		font-size: 14px;
 	}
 
 	&__title {
-		font-size: 32px;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 900;
 		color: $black;
+		font-family: 'Roboto', sans-serif;
+		font-size: 32px;
+		font-weight: 900;
 		margin-bottom: 20px;
 	}
-	
+
 	&__description {
 		color: $black;
-		font-size: 22px;
 		font-family: 'Roboto', sans-serif;
-		opacity: .7;
+		font-size: 22px;
 		margin-bottom: 60px;
+		opacity: .7;
 	}
-	
+
 	&__text {
-		margin-top: 70px;
 		color: $black;
 		font-family: 'Roboto', sans-serif;
 		font-size: 22px;
+		margin-top: 70px;
 	}
 }
