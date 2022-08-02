@@ -1,0 +1,65 @@
+@import '//color.scss';
+
+$white: #ffffff;
+$black: #000000;
+$brand-green: #01CC60;
+$brand-dark-green: #093725;
+$background-green: #0c6140;
+$gray: #b3b3b1;
+
+.idea {
+	max-width: 1100px;
+	margin: 0 auto;
+	
+	&__user {
+		align-items: center;
+		display: flex;
+		margin: 70px 0 50px;
+		color: $black;
+		text-decoration: none;
+
+		&_image {
+			img {
+				border-radius: 50%;
+				width: 50px;
+				height: 50px;
+			}
+		}
+
+		&_info {
+			margin-left: 16px;
+		}
+
+		&_name {
+			font-size: 16px;
+		}
+	}
+
+	&__date {
+		font-size: 14px;
+		color: #858585;
+	}
+
+	&__title {
+		font-size: 32px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 900;
+		color: $black;
+		margin-bottom: 20px;
+	}
+	
+	&__description {
+		color: $black;
+		font-size: 22px;
+		font-family: 'Roboto', sans-serif;
+		opacity: .7;
+		margin-bottom: 60px;
+	}
+	
+	&__text {
+		margin-top: 70px;
+		color: $black;
+		font-family: 'Roboto', sans-serif;
+		font-size: 22px;
+	}
+}

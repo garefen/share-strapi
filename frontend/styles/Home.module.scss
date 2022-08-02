@@ -1,0 +1,37 @@
+$white: #ffffff;
+$black: #000000;
+$brand-green: #01CC60;
+$brand-dark-green: #093725;
+$background-green: #0c6140;
+$gray: #b3b3b1;
+
+.home {
+	max-width: 1100px;
+	margin: 0 auto;
+	display: flex;
+
+	&__side {
+		margin-left: 130px;
+	}
+
+	&__search {
+		margin-top: 50px;
+
+		&_input {
+			width: 350px;
+			border-radius: 20px;
+			height: 40px;
+			border: 1px solid $black;
+			padding: 5px 20px;
+		}
+	}
+
+	&__title {
+		font-size: 44px;
+		font-family: 'Lato', sans-serif;
+		font-weight: 900;
+		color: $brand-green;
+		margin-top: 40px;
+		text-decoration: underline;
+	}
+}
