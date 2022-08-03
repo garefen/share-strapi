@@ -6,30 +6,34 @@ $background-green: #0c6140;
 $gray: #b3b3b1;
 
 .navbar {
-    background-color: $brand-dark-green;
+  background-color: $brand-dark-green;
 
-    &__wrapper {
-        align-items: center;
-        display: flex;
-        height: 100px;
-        justify-content: space-between;
-        margin: 0 auto;
-        max-width: 1100px;
+  &__wrapper {
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1100px;
+  }
+
+  &__logo {
+    cursor: pointer;
+  }
+
+  &__links_wrapper {
+    align-items: center;
+    display: flex;
+  }
+
+  &__link {
+    color: $brand-green;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+
+    &:not(:last-child) {
+        margin-right: 65px;
     }
-
-    &__links_wrapper {
-        align-items: center;
-        display: flex;
-    }
-
-    &__link {
-        color: $brand-green;
-        font-family: 'Roboto', sans-serif;
-        font-size: 20px;
-        font-weight: bold;
-
-        &:not(:last-child) {
-            margin-right: 65px;
-        }
-    }
+  }
 }

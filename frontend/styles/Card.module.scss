@@ -6,61 +6,61 @@ $background-green: #0c6140;
 $gray: #b3b3b1;
 
 .card {
-    border-bottom: 1px solid #09372560;
-    color: $black;
+  border-bottom: 1px solid #09372560;
+  color: $black;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+  padding-bottom: 55px;
+  text-decoration: none;
+  width: 630px;
+
+  &__title {
+    align-items: flex-start;
     display: flex;
-    justify-content: space-between;
-    margin-top: 75px;
-    padding-bottom: 55px;
-    text-decoration: none;
-    width: 630px;
+    font-size: 24px;
+    font-weight: 900;
+    margin-top: 10px;
 
-    &__title {
-        align-items: flex-start;
-        display: flex;
-        font-size: 24px;
-        font-weight: 900;
-        margin-top: 10px;
-
-        &_text {
-            max-width: 250px;
-        }
+    &_text {
+      max-width: 250px;
     }
+  }
 
-    &__lights {
-        align-items: center;
-        color: $brand-green;
-        display: flex;
-        font-size: 18px;
-        margin-left: 20px;
+  &__lights {
+    align-items: center;
+    color: $brand-green;
+    display: flex;
+    font-size: 18px;
+    margin-left: 20px;
 
-        svg {
-            margin-right: 5px;
-        }
+    svg {
+      margin-right: 5px;
     }
+  }
 
-    &__description {
+  &__description {
+    display: block;
+    font-size: 18px;
+    margin: 20px 0;
+    max-width: 350px;
+  }
+
+  &__author {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__category {
+    font-weight: normal;
+    opacity: .5;
+  }
+
+  &__image {
+    img {
         display: block;
-        font-size: 18px;
-        margin: 20px 0;
-        max-width: 350px;
+        height: 150px;
+        width: 150px;
     }
-
-    &__author {
-        font-size: 20px;
-        font-weight: bold;
-    }
-
-    &__category {
-        font-weight: normal;
-        opacity: .5;
-    }
-
-    &__image {
-        img {
-            display: block;
-            height: 150px;
-            width: 150px;
-        }
-    }
+  }
 }

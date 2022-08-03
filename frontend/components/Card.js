@@ -20,12 +20,14 @@ function Card({data}) {
             <div className={styles.card__description}>
                 {data.description}
             </div>
-            <div className={styles.card__author}>
-                <span>
-                    {data.user.data.attributes.username} •
-                </span>
-                <span className={styles.card__category}> {data.category}</span>
-            </div>
+            {data.user && (
+                <div className={styles.card__author}>
+                  <span>
+                      {data.user.data.attributes.username} •
+                  </span>
+                  <span className={styles.card__category}> {data.category}</span>
+              </div>
+            )}
         </div>
         <div className={styles.card__image}>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpNEn_i80w8Yq2-2zgXi9Om8l6J3-Bkkoe1QJdaanNFu8Cg0294IaOxcGVqQJWK_21Voc&usqp=CAU" alt="" />
