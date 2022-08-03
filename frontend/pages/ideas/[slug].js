@@ -5,7 +5,7 @@ import ReactMarkdown from "react-markdown";
 export default function Idea({ idea }) {
     return (
       <div className={styles.idea}>
-        <a href={`/user/`} className={styles.idea__user}>
+        <a href={`/users/${idea.attributes.user.data.attributes.slug}`} className={styles.idea__user}>
           <div className={styles.idea__user_image}>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpNEn_i80w8Yq2-2zgXi9Om8l6J3-Bkkoe1QJdaanNFu8Cg0294IaOxcGVqQJWK_21Voc&usqp=CAU" alt="" />
           </div>
