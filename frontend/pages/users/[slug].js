@@ -1,4 +1,5 @@
 import styles from '../../styles/User.module.scss';
+import Image from 'next/image';
 
 import Card from '../../components/Card';
 
@@ -21,7 +22,7 @@ export default function User({ user }) {
             {user.ideas && user.ideas.length > 0 && (
               <>
                 <div className={styles.user__main}>
-                  {user.ideas.map((idea, i) => <Card data={idea} />)}
+                  {user.ideas.map((idea, i) => <Card data={idea} key={i} />)}
                 </div>
                 <div className={styles.user__side}>
                 </div>

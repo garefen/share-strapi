@@ -7,7 +7,7 @@ export default function Home({ ideas }) {
   return (
     <div className={styles.home}>
       <div className={styles.home__main}>
-        {ideas && ideas.data.map((idea, i) => <Card data={idea.attributes} />)}
+        {ideas && ideas.data.map((idea, i) => <Card data={idea.attributes} key={i}/>)}
       </div>
       <div className={styles.home__side}>
         <div className={styles.home__search}>
