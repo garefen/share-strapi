@@ -38,7 +38,7 @@ export default function User({ user }) {
 }
 
 export async function getStaticPaths() {
-  const res = await fetch("http://localhost:1337/api/users");
+  const res = await fetch("https://strapi-heroku-share.herokuapp.com/api/users");
   const users =  await res.json();
 
   const paths = users.map((user) => ({
@@ -54,7 +54,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({params}) {
   const { slug } = params;
 
-  const res = await fetch(`http://localhost:1337/api/users?populate=%2A&filters[slug]=${slug}`);
+  const res = await fetch(`https://strapi-heroku-share.herokuapp.com/api/users?populate=%2A&filters[slug]=${slug}`);
   const data = await res.json();
   const user = data[0];
 

@@ -24,7 +24,7 @@ export default function Home({ ideas }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:1337/api/ideas?populate=%2A");
+  const res = await fetch("https://strapi-heroku-share.herokuapp.com/api/ideas?populate=%2A");
   const ideas = await res.json();
   return {
     props: { ideas },

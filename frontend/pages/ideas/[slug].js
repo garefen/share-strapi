@@ -26,7 +26,7 @@ export default function Idea({ idea }) {
 }
 
 export async function getStaticPaths() {
-  const res = await fetch("http://localhost:1337/api/ideas?populate=%2A");
+  const res = await fetch("https://strapi-heroku-share.herokuapp.com/api/ideas?populate=%2A");
   const ideas =  await res.json();
 
   const paths = ideas.data.map((idea) => ({
@@ -42,7 +42,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({params}) {
   const { slug } = params;
 
-  const res = await fetch(`http://localhost:1337/api/ideas?populate=%2A&filters[slug]=${slug}`);
+  const res = await fetch(`https://strapi-heroku-share.herokuapp.com/api/ideas?populate=%2A&filters[slug]=${slug}`);
   const data = await res.json();
   const idea = data.data[0];
 
